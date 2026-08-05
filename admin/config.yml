@@ -1,0 +1,56 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "img/uploads"
+public_folder: "img/uploads"
+
+locale: "en"
+
+collections:
+  - name: "projects"
+    label: "Prosjekter"
+    label_singular: "Prosjekt"
+    files:
+      - name: "projects"
+        label: "Prosjektbilder"
+        file: "content/projects.json"
+        description: "Bildene som vises på Prosjekter-siden. Dra for å endre rekkefølge."
+        fields:
+          - name: "items"
+            label: "Prosjekter"
+            label_singular: "Prosjekt"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - name: "image"
+                label: "Bilde"
+                widget: "image"
+                hint: "Landskapsformat fungerer best. Bildet beskjæres til 340 px høyde."
+              - name: "caption"
+                label: "Bildetekst"
+                widget: "string"
+                hint: "F.eks. «Kjøkken — Farsund». Vises i store bokstaver under bildet."
+
+  - name: "reviews"
+    label: "Omtaler"
+    files:
+      - name: "reviews"
+        label: "Kundeomtaler"
+        file: "content/reviews.json"
+        description: "Sitatene som vises på Omtaler-siden."
+        fields:
+          - name: "items"
+            label: "Omtaler"
+            label_singular: "Omtale"
+            widget: "list"
+            summary: "{{fields.author}}"
+            fields:
+              - name: "quote"
+                label: "Sitat"
+                widget: "text"
+                hint: "Bruk norske anførselstegn: «sitat»"
+              - name: "author"
+                label: "Navn og sted"
+                widget: "string"
+                hint: "F.eks. «— Thomas, Farsund» (med tankestrek foran)"
