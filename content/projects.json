@@ -2,7 +2,12 @@
   "items": [
     {
       "image": "img/uploads/9ab5565f-3f62-48f3-9781-d7a00018b207.png",
-      "caption": "  Privat bolig i Farsund"
+      "caption": "  Privat bolig i Farsund",
+      "photos": [
+        "img/uploads/img_1282.jpeg",
+        "img/uploads/img_1279.jpeg",
+        "img/uploads/img_1280.jpeg"
+      ]
     },
     {
       "image": "img/uploads/proj-2.jpg",
