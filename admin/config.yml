@@ -5,17 +5,14 @@ backend:
 media_folder: "img/uploads"
 public_folder: "img/uploads"
 
-locale: "en"
-
 collections:
   - name: "projects"
     label: "Prosjekter"
-    label_singular: "Prosjekt"
     files:
       - name: "projects"
         label: "Prosjektbilder"
         file: "content/projects.json"
-        description: "Bildene som vises på Prosjekter-siden. Dra for å endre rekkefølge."
+        description: "Prosjektene som vises på Prosjekter-siden. Dra for å endre rekkefølge."
         fields:
           - name: "items"
             label: "Prosjekter"
@@ -24,13 +21,24 @@ collections:
             summary: "{{fields.caption}}"
             fields:
               - name: "image"
-                label: "Bilde"
+                label: "Forsidebilde"
                 widget: "image"
-                hint: "Landskapsformat fungerer best. Bildet beskjæres til 340 px høyde."
+                hint: "Bildet som vises i rutenettet. Landskapsformat fungerer best."
               - name: "caption"
                 label: "Bildetekst"
                 widget: "string"
                 hint: "F.eks. «Kjøkken — Farsund». Vises i store bokstaver under bildet."
+              - name: "photos"
+                label: "Flere bilder fra samme prosjekt"
+                label_singular: "Bilde"
+                widget: "list"
+                required: false
+                collapsed: false
+                hint: "Valgfritt. Disse vises når man klikker på forsidebildet, i denne rekkefølgen."
+                field:
+                  name: "image"
+                  label: "Bilde"
+                  widget: "image"
 
   - name: "reviews"
     label: "Omtaler"
