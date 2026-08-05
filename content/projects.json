@@ -27,7 +27,10 @@
     },
     {
       "image": "img/uploads/13.png",
-      "caption": "Et drømmerom for en liten jente - Langhus"
+      "caption": "Et drømmerom for en liten jente - Langhus",
+      "photos": [
+        "img/uploads/1.png"
+      ]
     }
   ]
 }
