@@ -1,10 +1,28 @@
 {
   "items": [
-    { "image": "img/uploads/proj-1.jpg", "caption": "Under montering — Vanse" },
-    { "image": "img/uploads/proj-2.jpg", "caption": "Garderobe — Lyngdal" },
-    { "image": "img/uploads/proj-3.jpg", "caption": "Entré — Kvinesdal" },
-    { "image": "img/uploads/proj-4.jpg", "caption": "Bad — Flekkefjord" },
-    { "image": "img/uploads/proj-5.jpg", "caption": "Kjøkken — Lister" },
-    { "image": "img/uploads/proj-6.jpg", "caption": "Detalj — justering" }
+    {
+      "image": "img/uploads/proj-1.jpg",
+      "caption": "Under montering — Vanse"
+    },
+    {
+      "image": "img/uploads/proj-2.jpg",
+      "caption": "Garderobe — Lyngdal"
+    },
+    {
+      "image": "img/uploads/proj-3.jpg",
+      "caption": "Entré — Kvinesdal"
+    },
+    {
+      "image": "img/uploads/proj-4.jpg",
+      "caption": "Bad — Flekkefjord"
+    },
+    {
+      "image": "img/uploads/proj-5.jpg",
+      "caption": "Kjøkken — Lister"
+    },
+    {
+      "image": "img/uploads/proj-6.jpg",
+      "caption": "Detalj — justering hos kunde"
+    }
   ]
 }
