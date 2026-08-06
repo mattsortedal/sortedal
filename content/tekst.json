@@ -1,0 +1,74 @@
+{
+  "hjem": {
+    "kicker": "Kjøkken- og interiørmontering",
+    "slagord": "Presisjon i hver detalj",
+    "intro": "Montering av kjøkken og innredning for privat- og bedriftskunder i Lister, Agder, Rogaland, Vestfold og Telemark, Viken og Oslo. 14 års erfaring i faget – og én enkel regel: Jobben er ikke ferdig før resultatet er slik det skal være.",
+    "kompetanseKicker": "Min kompetanse",
+    "kompetanseTittel": "Over ti års erfaring med skreddersydde innredninger",
+    "kompetanseTekst": [
+      { "tekst": "Jeg har med stolthet montert kjøkken og fast innredning fra blant andre Hamran, Strai, Kvik, HTH, Aubo, Farsund Kjøkkensenter, IKEA og Drømmekjøkkenet – for privatkunder og bedrifter, i prosjekter av alle størrelser." },
+      { "tekst": "Presisjon i arbeidet mitt har alltid høyeste prioritet." }
+    ],
+    "kontaktKicker": "Ta kontakt",
+    "kontaktTittel": "Fortell meg om ditt neste prosjekt",
+    "kontaktTekst": "Send noen ord om hva som skal monteres, hvor og omtrent når. Du får svar samme dag, og jeg avtaler en befaring eller en prat som passer deg.",
+    "takkTittel": "Tusen takk!",
+    "takkTekst": "Jeg har mottatt henvendelsen din, og du hører fra meg i løpet av dagen. Haster det, ring gjerne +47 404 62 890."
+  },
+  "tjenester": {
+    "kicker": "Mine tjenester",
+    "tittel": "Rett skal være rett",
+    "poster": [
+      {
+        "tittel": "Kjøkkenmontering",
+        "tekst": "Komplett montering av kjøkken — fra oppmåling og kontroll av tegning til ferdig justerte dører, benkeplate, sokkel og lister. Jeg tar hele jobben eller kommer inn der du står fast."
+      },
+      {
+        "tittel": "Møbelmontering",
+        "tekst": "Garderobeskap, oppbevaring, hyller og innredning. Både flatpakket og spesialtilpasset, og både i private hjem og i næringslokaler."
+      },
+      {
+        "tittel": "Kjøkkendesign",
+        "tekst": "Fjorten år med å montere andres tegninger har lært meg hva som ser riktig ut på papiret, men skaper problemer i praksis. Ta meg med tidlig, før noe bestilles."
+      },
+      {
+        "tittel": "Snekkerarbeid",
+        "tekst": "Tilpasninger, lister og listverk, dører, terrassebord, boder, kledning og de løsningene som må bygges på stedet fordi de ikke finnes ferdige. Bare spør."
+      },
+      {
+        "tittel": "Håndverk og vedlikehold",
+        "tekst": "De oppgavene som blir stående på lista for lenge. Dørkarmer som henger, ting som skal opp på veggen ordentlig, små reparasjoner, generelt vedlikehold. Ingen jobb er for liten — men den skal gjøres skikkelig."
+      }
+    ],
+    "sitatLinje1": "Jobben er ikke ferdig",
+    "sitatLinje2": "før resultatet er slik det skal være."
+  },
+  "prosjekter": {
+    "kicker": "Prosjekter",
+    "tittel": "Et glimt inn i min verden",
+    "intro": "Ta en titt på noen av prosjektene jeg har vært involvert i."
+  },
+  "omtaler": {
+    "kicker": "Omtaler",
+    "tittel": "Dette sier kundene mine"
+  },
+  "omMeg": {
+    "kicker": "Om meg",
+    "tittelLinje1": "14 år i faget.",
+    "tittelLinje2": "Fortsatt like nøye.",
+    "bildetekst": "Matt Sortedal — Farsund",
+    "avsnitt": [
+      { "tekst": "Jeg heter Matt Sortedal og bor i Farsund med familien min." },
+      { "tekst": "Bakgrunnen min er sammensatt, og veien til montering tok mange svinger. Jeg er utdannet som journalist og arbeidet som radioreporter, men forlot yrket den dagen det sluttet å være noe jeg trodde på. Siden har jeg jobbet bak bar, i butikk, med butikkledelse og med logistikk — i Polen og Irland. For femten år siden flyttet jeg til Norge, og etter en kort periode i utelivsbransjen og i flyttebransjen snublet jeg over faget som til slutt viste seg å være mitt." },
+      { "tekst": "Jeg brukte tre år på å lære monteringsfaget med kjedekjøkken — Ikea, Kvik, HTH, Aubo, Strai og andre — etterfulgt av elleve svært gode år ved [Hamran Snekkerverksted](https://www.hamran.no), først som montør og senere som ansvarlig for logistikk og montasje. Den siste rollen ga meg erfaring fra den andre siden av bordet: framdriftsplaner, koordinering mot andre fag, og ansvar for at avtalte leveranser faktisk ble holdt." },
+      { "tekst": "Jeg arbeider både for privatkunder og for bedrifter — kjøkkenleverandører, byggmestere, entreprenører og andre håndverksfag som trenger monteringskapasitet. Uansett oppdragsgiver er arbeidsmåten den samme: vi avtaler sammen hva som skal gjøres og når det skal gjøres, og så kommer jeg når jeg har sagt at jeg kommer og gjør det vi ble enige om. Skulle noe endre seg, sier jeg det med én gang — ikke i etterkant." },
+      { "tekst": "Gjennom en variert karriere har noen få verdier festet seg som grunnlaget for måten jeg arbeider på: presisjon og sans for detaljer, stolthet i eget arbeid, pålitelighet og tillit. Men fremfor alt handler det om mennesker. Enhver oppgave er viktig, og jeg går til hver jobb som om den skulle vært utført hjemme hos meg selv. Relasjonene som oppstår underveis, setter jeg like høyt som resultatet." }
+    ],
+    "sitat": "Kunden min skal bli ivaretatt, hørt og holdt informert — og til slutt fornøyd med arbeidet som er levert."
+  },
+  "partnere": {
+    "kicker": "Partnere",
+    "tittel": "Fagfolk jeg jobber sammen med",
+    "intro": "Gode prosjekter blir sjelden til alene. Dette er firmaene jeg samarbeider tettest med i Lister — og som jeg trygt anbefaler videre."
+  }
+}
