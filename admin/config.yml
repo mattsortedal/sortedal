@@ -5,14 +5,104 @@ backend:
 media_folder: "img/uploads"
 public_folder: "img/uploads"
 
+locale: "en"
+
 collections:
+  - name: "tekst"
+    label: "Tekst på sidene"
+    files:
+      - name: "hjem"
+        label: "Hjem"
+        file: "content/tekst.json"
+        description: "Teksten på forsiden. Lagre og publiser — endringen er live etter cirka ett minutt."
+        fields:
+          - name: "hjem"
+            label: "Forsiden"
+            widget: "object"
+            fields:
+              - { name: "kicker", label: "Liten tekst over slagordet", widget: "string" }
+              - { name: "slagord", label: "Slagord", widget: "string" }
+              - { name: "intro", label: "Introduksjon", widget: "text" }
+              - { name: "kompetanseKicker", label: "Kompetanse — liten tekst", widget: "string" }
+              - { name: "kompetanseTittel", label: "Kompetanse — overskrift", widget: "string" }
+              - name: "kompetanseTekst"
+                label: "Kompetanse — avsnitt"
+                label_singular: "Avsnitt"
+                widget: "list"
+                fields:
+                  - { name: "tekst", label: "Avsnitt", widget: "text" }
+              - { name: "kontaktKicker", label: "Kontakt — liten tekst", widget: "string" }
+              - { name: "kontaktTittel", label: "Kontakt — overskrift", widget: "string" }
+              - { name: "kontaktTekst", label: "Kontakt — avsnitt", widget: "text" }
+              - { name: "takkTittel", label: "Takkemelding — overskrift", widget: "string" }
+              - { name: "takkTekst", label: "Takkemelding — tekst", widget: "text" }
+          - name: "tjenester"
+            label: "Tjenester"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "kicker", label: "Liten tekst", widget: "string" }
+              - { name: "tittel", label: "Overskrift", widget: "string" }
+              - name: "poster"
+                label: "Tjenester"
+                label_singular: "Tjeneste"
+                widget: "list"
+                summary: "{{fields.tittel}}"
+                fields:
+                  - { name: "tittel", label: "Navn på tjenesten", widget: "string" }
+                  - { name: "tekst", label: "Beskrivelse", widget: "text" }
+              - { name: "sitatLinje1", label: "Sitat — første linje", widget: "string" }
+              - { name: "sitatLinje2", label: "Sitat — andre linje", widget: "string" }
+          - name: "prosjekter"
+            label: "Prosjekter — overskrift"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "kicker", label: "Liten tekst", widget: "string" }
+              - { name: "tittel", label: "Overskrift", widget: "string" }
+              - { name: "intro", label: "Undertittel", widget: "text" }
+          - name: "omtaler"
+            label: "Omtaler — overskrift"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "kicker", label: "Liten tekst", widget: "string" }
+              - { name: "tittel", label: "Overskrift", widget: "string" }
+          - name: "omMeg"
+            label: "Om meg"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "kicker", label: "Liten tekst", widget: "string" }
+              - { name: "tittelLinje1", label: "Overskrift — første linje", widget: "string" }
+              - { name: "tittelLinje2", label: "Overskrift — andre linje", widget: "string" }
+              - { name: "bildetekst", label: "Tekst under bildet", widget: "string" }
+              - name: "avsnitt"
+                label: "Avsnitt"
+                label_singular: "Avsnitt"
+                widget: "list"
+                fields:
+                  - name: "tekst"
+                    label: "Avsnitt"
+                    widget: "text"
+                    hint: "Lenker skrives slik: [teksten som vises](https://adressen.no)"
+              - { name: "sitat", label: "Uthevet sitat nederst", widget: "text" }
+          - name: "partnere"
+            label: "Partnere — overskrift"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { name: "kicker", label: "Liten tekst", widget: "string" }
+              - { name: "tittel", label: "Overskrift", widget: "string" }
+              - { name: "intro", label: "Introduksjon", widget: "text" }
+
   - name: "projects"
-    label: "Prosjekter"
+    label: "Prosjektbilder"
     files:
       - name: "projects"
         label: "Prosjektbilder"
         file: "content/projects.json"
-        description: "Prosjektene som vises på Prosjekter-siden. Dra for å endre rekkefølge."
+        description: "Bildene på Prosjekter-siden. Dra for å endre rekkefølge."
         fields:
           - name: "items"
             label: "Prosjekter"
@@ -21,24 +111,20 @@ collections:
             summary: "{{fields.caption}}"
             fields:
               - name: "image"
-                label: "Forsidebilde"
+                label: "Hovedbilde"
                 widget: "image"
-                hint: "Bildet som vises i rutenettet. Landskapsformat fungerer best."
+                hint: "Landskapsformat fungerer best. Beskjæres til 340 px høyde i rutenettet."
               - name: "caption"
                 label: "Bildetekst"
                 widget: "string"
                 hint: "F.eks. «Kjøkken — Farsund». Vises i store bokstaver under bildet."
-              - name: "photos"
+              - name: "gallery"
                 label: "Flere bilder fra samme prosjekt"
                 label_singular: "Bilde"
                 widget: "list"
                 required: false
-                collapsed: false
-                hint: "Valgfritt. Disse vises når man klikker på forsidebildet, i denne rekkefølgen."
-                field:
-                  name: "image"
-                  label: "Bilde"
-                  widget: "image"
+                field: { name: "image", label: "Bilde", widget: "image" }
+                hint: "Vises når man klikker på hovedbildet. La stå tom hvis prosjektet bare har ett bilde."
 
   - name: "reviews"
     label: "Omtaler"
@@ -46,7 +132,7 @@ collections:
       - name: "reviews"
         label: "Kundeomtaler"
         file: "content/reviews.json"
-        description: "Sitatene som vises på Omtaler-siden."
+        description: "Sitatene på Omtaler-siden."
         fields:
           - name: "items"
             label: "Omtaler"
