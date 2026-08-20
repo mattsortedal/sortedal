@@ -1,0 +1,2 @@
+https://sortedal.no/*      https://www.sortedal.com/:splat  301!
+https://www.sortedal.no/*  https://www.sortedal.com/:splat  301!
